@@ -138,23 +138,19 @@
   border-radius: 6px;
   margin-bottom: 10px;
 }
+
 .page-bg {
   min-height: 100vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  position: relative;
+  isolation: isolate;
 }
 
 .page-bg::before {
-  content: '';
+  content: "";
   position: fixed;
   inset: 0;
   background: rgba(255, 255, 255, 0.88);
-  z-index: 0;
-}
-
-.page-bg > * {
-  position: relative;
-  z-index: 1;
+  z-index: -1;
 }
