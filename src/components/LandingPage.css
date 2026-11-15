@@ -1,0 +1,44 @@
+.landing {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.landing-overlay {
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 40px;
+  color: white;
+}
+
+.landing-left {
+  text-align: center;
+  max-width: 320px;
+}
+
+.landing-right {
+  max-width: 560px;
+  font-weight: 600;
+}
+
+.get-started {
+  background: #f0c060;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .landing-overlay {
+    flex-direction: column;
+  }
+}
+.landing-left h1 {
+  color: white;
+}
